@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/scripts.js" type="module" defer></script>
+    <title>Gomez Alejandro</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./img/logo.png" alt="logo de la pagina" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./heroes.html">Personajes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="loader-section">
+        <img src="./img/Loading_icon.gif" alt="loader spinner" id="loader" />
+      </section>
+      <section class="seccion-formulario">
+        <h1>Crud Heroes</h1>
+        <form id="formulario">
+          <fieldset>
+            <h2>Informacion del super heroe</h2>
+            <p>
+              Nombre: <br />
+              <input
+                type="text"
+                name="txtNombre"
+                placeholder="Ingrese nombre"
+                autocomplete="off"
+                required
+              />
+            </p>
+            <p>
+              <!-- <img src=""> -->
+              Alias: <br />
+              <input
+                type="text"
+                name="txtAlias"
+                placeholder="Ingrese alias"
+                autocomplete="off"
+                required
+              />
+            </p>
+            <fieldset>
+              <p>Editorial</p>
+              <p>
+                <img src="./img/marvel-logo.png" id="marve-logo" />
+                <input
+                  type="radio"
+                  name="rdoEditorial"
+                  value="Marvel"
+                  checked
+                />
+              </p>
+              <p>
+                <img src="./img/dc-logo.png" />
+                <input type="radio" name="rdoEditorial" value="DC" />
+              </p>
+            </fieldset>
+            <p>
+              <img src="./img/fuerza.png" />
+              fuerza:
+              <input type="range" name="inputFuerza" min="0" max="1000" />
+            </p>
+            <p>
+              Arma:
+              <select name="selectArma" id="selectArma"></select>
+            </p>
+          </fieldset>
+          <section class="botones">
+            <input id="botonGuardar" type="submit" value="Guardar" />
+            <input id="botonEliminar" type="button" value="Eliminar" />
+            <input id="botonCancelar" type="button" value="Cancelar" />
+          </section>
+          <input type="hidden" name="txtId" />
+        </form>
+      </section>
+      <section class="seccion-tabla">
+        <div id="tabla"></div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./heroes.html">Personajes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>Laboratorio III-Todos los derechos reservados</p>
+      </nav>
+    </footer>
+  </body>
+</html>

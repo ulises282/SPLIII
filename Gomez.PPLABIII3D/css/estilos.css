@@ -1,0 +1,181 @@
+#loader-section{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#loader{
+  width: 200px;
+  height: 200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li, footer li{
+  float: right;
+}
+
+header ul li a, footer ul li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+header, footer {
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+footer p{
+  color:white;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+/* TABLA******************************************************************************************** */
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+.seccion-formulario,
+.seccion-tabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: 20%;
+  background-image: url("../img/fondo-form.png");
+  background-size: cover;
+  background-position: center;
+}
+
+p img {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+th {
+  text-transform: capitalize;
+  background-color: orange;
+  padding: 20px;
+}
+
+td {
+  text-align: center;
+}
+
+/* FORM**************************************************************************************************** */
+
+body {
+  background-image: url("../img/fondo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+fieldset input {
+  background-color: #ddd;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+fieldset p {
+  font-weight: bold;
+  font-size: larger;
+}
+
+form img {
+  width: 25px;
+  height: 25px;
+}
+
+.botones input {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: white;
+}
+
+#botonGuardar {
+  background-color: green;
+}
+
+#botonEliminar {
+  background-color: red;
+}
+
+#botonCancelar {
+  background-color: blue;
+}
+/* ************************************************************************************************************** */
+tr:hover {
+  background-color: #aaa;
+}
+
+.rowPar {
+  background-color: #ddd;
+}
+
+article {
+  width: 40%;
+  padding: 20px;
+  margin: 20px;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.precio {
+  color: green;
+}
+
+article ul li {
+  display: inline-flex;
+  padding: 0px 40px;
+}
+
+article ul li p {
+  padding: 10px;
+}
+
+article input {
+  background-color: orange;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  border: none;
+  color: white;
+}
+
+p p{
+    display: inline-block;
+}
